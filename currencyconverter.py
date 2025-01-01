@@ -1,6 +1,8 @@
 import tkinter
 from PIL import Image , ImageTk
 from tkinter import ttk
+def graph():
+   main= tkinter.Toplevel(root)
 # def conversion():
 
 
@@ -27,4 +29,6 @@ frame=tkinter.Frame(root)
 frame.pack()
 button=tkinter.Button(root,text="convert",bg="pink")#,command=conversion)
 button.pack(pady=30)
+button2=tkinter.Button(root,text="graph",bg="pink",activebackground="green", activeforeground="yellow" , command=graph)
+button2.pack(pady=30)
 root.mainloop()
